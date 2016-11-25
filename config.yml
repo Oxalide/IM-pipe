@@ -1,0 +1,22 @@
+- read: backend=hipchat server=https://<hipchat_server> api_token=<token>
+	channels:
+		- name: <room_name>
+			forward_pattern_to: <room>@<write.alias>
+			forward_any: <room>@<write.alias>
+			read_pattern:
+				- <pattern>
+				- "@all"
+				- "@bjo"
+				- alerte
+- read: backend=slack server=https://api.slack.com api_token=<token>
+	channels:
+		- name: <room_name> # without starting # char
+			forward_pattern_to: <room>@<write.alias>
+			forward_any: <room>@<write.alias>
+			read_pattern:
+				- <pattern>
+				- "@all"
+				- "@bjo"
+				- alerte
+- write: backend=hipchat alias=<alias> server=<hipchat_server> api_token=<token>
+- write: backend=flowdock alias=<alias> [server=https://api.flowdock.com] api_token=<token>
