@@ -20,5 +20,3 @@
         - alerte
 - write: backend=hipchat alias=<alias> server=<hipchat_server> api_token=<token>
 - write: backend=flowdock alias=<alias> [server=https://api.flowdock.com] api_token=<token>
-
-
