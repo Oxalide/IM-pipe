@@ -55,5 +55,5 @@ To use this application, please follow the steps below :
 
 When installation is done, you need to add a configuration file and launch the program :
 
-  * python bot.py *(if your configuration file name is **config.yml**)*
-  * python bot.py --config 'CONFIG FILE NAME' *(if your configuration file name is different to **config.yml**)*
+  * python bot.py *(if your configuration file name is config.yml)*
+  * python bot.py --config 'CONFIG FILE NAME' *(if your configuration file name is different to config.yml)*
